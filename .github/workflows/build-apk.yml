@@ -21,6 +21,10 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      # ЭТОТ ШАГ БЫЛ ПОТЕРЯН - ОН УСТАНАВЛИВАЕТ ANDROID SDK
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v4
+
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
