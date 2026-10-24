@@ -29,7 +29,7 @@ jobs:
           gradle-version: '8.9'
 
       - name: Build debug APK
-        working-directory: ./RES-Navigator-Bograd
+        working-directory: .RES-Navigator-Bograd
         run: gradle --no-daemon assembleDebug
 
       - name: Upload APK artifact
